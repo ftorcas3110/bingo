@@ -1,0 +1,96 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom left, #2455c0 , #0b142c);
+    background-attachment: fixed;
+}
+.contenedor{
+    display: flex;
+    gap: 4.8%;
+    place-content: center center;
+    min-height: 40vh;
+    margin-top: 150px;
+}
+
+.jugador {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 300px;
+    height: 225px;
+    background-color: #9e1c23;
+}
+
+.bombo {
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 50%;
+    text-align: center;
+    place-content: center center;
+    align-items: center;
+    align-content: center;
+}
+
+.salida {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-gap: 5px;
+    border: 5px solid #eeeeee;
+    margin: 0px 60px 0px 60px;
+    min-height: 30vh;
+    padding: 5px;
+}
+
+#numero{
+    font-size: 24px;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: #fff;
+    font-weight: bolder;
+}
+
+.texto {
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    width: inherit;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.carton {
+    display: grid;
+    height: 170px;
+    width: inherit;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+}
+
+.valor {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+}
+
+.numeroCorrecto{
+    text-decoration: line-through;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+}
