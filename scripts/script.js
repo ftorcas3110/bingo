@@ -47,6 +47,7 @@ let boton = document.getElementById("numero");
 let bolas = document.getElementsByClassName("salida");
 
 boton.addEventListener("click", () => {
+    boton.id = "";
     intervaloBolas = setInterval(() => {
 
         numero = document.createElement("div");
@@ -66,7 +67,6 @@ boton.addEventListener("click", () => {
             usados.push(aleatorio);
         }
 
-        boton.id = "";
         boton.className = "valor";
         boton.innerHTML = aleatorio;
         if (contadorVictorias[0] + contadorVictorias[1] != 29) {
